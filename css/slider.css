@@ -1,0 +1,32 @@
+.w3-animate-left
+{
+	position:relative;
+	animation:animateleft 0.6s
+}
+@keyframes animateleft
+{from
+	{
+		left:-300px;opacity:0
+	} to{
+		left:0;opacity:1
+		}
+}
+.w3-animate-right
+{
+	position:relative;
+	animation:animateright 0.4s
+}
+	@keyframes animateright
+	{from
+		{
+			right:-300px;opacity:0
+		} to{right:0;opacity:1
+			}
+	}
+.slider{
+	width:100%;
+	position:relative;
+}
+.slider img{
+	width: 100%;
+}
