@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>slider and todo</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/slider.css">
+</head>
+<body>
+	<div class="container">
+		<div class="slider">
+		</div>
+		<div class="no-img-msg">No images to display</div>
+		<br/>
+		<br/>
+		<div class="image-control">
+			<!--<input type="file" id="task">
+			<input type="button" value="add" id="add-btn">
+			<input type="button" value="update" hidden  id="update-btn">-->
+			<form>
+				<div class="form-group">
+				    <label for="exampleInputName2">Please select image:</label>
+				    <input type="file" id="task" placeholder="Jane Doe">
+			  	</div>
+			  	<input type="button"  class="btn btn-default" value="add" id="add-btn">
+			</form>
+			<br/>
+			<br/>
+			<h3>Image List</h3>
+			<table id="list" class="table table-hover">
+				<tr>
+					<th>no</th>
+					<th>image</th>
+					<th>action</th>
+				</tr>
+			</table>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js"
+			integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+			crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/sllider_todo.js"></script>	
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>	
+</body>
+</html>

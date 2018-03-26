@@ -2,20 +2,42 @@
 <html>
 <head>
 	<title>todo</title>
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 </head>
 <body>
-<input type="text" id="task">
-<input type="button" value="add" id="add-btn">
-<input type="button" value="update" hidden  id="update-btn">
-
-<table id="list">
+	<form class="form-inline">
+	  <div class="form-group">
+	    <label for="exampleInputName2">Task</label>
+	    <input type="text" class="form-control" id="task" placeholder="Jane Doe">
+	  </div>
+	  	<input type="button"  class="btn btn-default" value="add" id="add-btn">
+		<input type="button"  class="btn btn-default" value="update" hidden  id="update-btn">
+	</form>
+<br/>
+<br/>
+<h3>TODO List</h3>
+<table id="list" class="table table-hover">
 	<tr>
 		<th>no</th>
+		<th>completed</th>
 		<th>task</th>
 		<th>action</th>
 	</tr>
 </table>
-<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+<br/>
+<br/>
+<h3>Completed task</h3>
+<table id="list-completed" class="table table-hover">
+	<tr>
+		<th>no</th>
+		<th>task</th>
+	</tr>
+</table>
+<script
+			  src="https://code.jquery.com/jquery-2.2.4.min.js"
+			  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+			  crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/todo.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 </html>
