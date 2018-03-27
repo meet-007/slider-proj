@@ -24,13 +24,14 @@ $(document).ready(function(){
 
     					html1 = "<div class='slider-img' id='img_"+k+"'><img src='"+reader.result+"'/></div>";
     					$(".slider").prepend(html1);
+    					k++;
  						 };
   						 reader.readAsDataURL(file);
 						var html = "<tr id='index_"+k+"'><td>"+k+"</td><td>"+file.name+"</td><td><input type='button' class='delete-btn btn btn-default' value='delete'/></td></tr>";
 						$("#list").append(html);
 						image[k]=file;
 				
-						k++;
+						
 					
 					
 				/*	
